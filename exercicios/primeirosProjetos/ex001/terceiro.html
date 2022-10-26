@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+   
+    <script>
+        let produto = Number(window.prompt('Qual valor do produto?'))
+    
+        let formaPagamento = (window.prompt('Qual a forma de pagamento? A vista digite : 1 e parcelado digite 2'))
+
+        
+        
+
+        if ( formaPagamento == 1) { window.alert(`Você escolheu a forma da pagamento a vista, parabéns você conseguiu um desconto de 10%. O valor do seu pedido fica ${(produto) - (produto*0.10)}`)} 
+        
+        let parcela = (window.prompt(`Quantas parcelas você deseja?`))
+
+        if ( formaPagamento == 2) window.alert(`Você escolheu a forma parcelada em ${parcela} vezes, seu pedido ficou R$${produto/parcela},00 em ${parcela}x`)
+      
+               
+        
+
+        
+       
+        
+    </script>
+</body>
+</html>

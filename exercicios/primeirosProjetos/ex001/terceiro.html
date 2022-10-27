@@ -11,16 +11,16 @@
     <script>
         let produto = Number(window.prompt('Qual valor do produto?'))
     
-        let formaPagamento = (window.prompt('Qual a forma de pagamento? A vista digite : 1 e parcelado digite 2'))
+        let formaPagamento = Number (window.prompt('Qual a forma de pagamento? A vista digite : 1 e parcelado digite 2'))
 
         
         
 
         if ( formaPagamento == 1) { window.alert(`Você escolheu a forma da pagamento a vista, parabéns você conseguiu um desconto de 10%. O valor do seu pedido fica ${(produto) - (produto*0.10)}`)} 
 
-        else if (formaPagamento == 2) { let parcela = (window.prompt(`Quantas parcelas você deseja?`))}
+        else if (formaPagamento == 2) { let parcela = Number (window.prompt('Quantas parcelas você deseja?'))}
         
-        else if (parcela > 1) { window.alert(`Você escolheu a forma parcelada em ${parcela} vezes, seu pedido ficou R$${produto/parcela},00 em ${parcela}x`)}
+        if (parcela > 1) { window.alert(`Você escolheu a forma parcelada em ${parcela} vezes, seu pedido ficou R$${produto/parcela},00 em ${parcela}x`)}
       
                
         

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* em HTML é id = em CSS é # 
+    em HTML é class = em CSS é .
+*/
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+header > h1 {
+    color: rgb(7, 109, 150);
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 25px;
+
+}
+
+header > p {
+    margin: 15px;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    
+}
+
+#left { 
+    background-color: rgb(226, 229, 229);
+    height: 250px;
+    width: 50%;
+    
+    
+}
+
+#left > h1 { 
+    text-align: center;
+    padding-top: 40px;
+    
+    color: rgb(7, 109, 150);
+}
+
+#left > p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#right { 
+    background-color: rgb(7, 109, 150);
+    height: 250px;
+    width: 50%;
+}
+
+#right > h1 {
+    color: white;
+    font-size: 15px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+#right > input {
+
+    height: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+#right > button {
+    color: white;
+    background-color: orange;
+    margin-left: 20px;
+    padding: 4px;
+    width: 100px;
+    
+}
+
+#right > p { 
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+}

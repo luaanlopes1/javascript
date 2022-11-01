@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <header>
+        <h1> Esta calculadora mede o IMC de pessoas acima de 18 anos <br> Crianças e adolescentes devem consultar um profissional de saúde especializado.</h1>
+
+        <p>Para ter uma estimativa, pode-se calcular o IMC e comparar o valor encontrado aos de tabelas validadas que classificam o grau de sobrepeso e obesidade para crianças e adolescentes. Veja a tabela abaixo.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="left">
+                <h1>Ainda não sabe qual o seu Índice de massa corporal (IMC)?</h1>
+                <p>Faça o cálculo aqui mesmo e conheça mais sobre o seu corpo.</p>
+            </div>
+            <div id="right">
+                <h1>Para calcular o IMC (Índice de Massa Corporal), basta preencher os campos abaixo.</h1>
+                <input type="number" name="altura" id="tamanho" placeholder="Altura(cm)"> <input type="number" name="Peso" id="peso" placeholder="Peso (kg)">
+                <br>
+                <button onclick="calcular()" id="calcular">Calcular</button>
+                <br>
+                <p id="seuResultado"></p>
+                <br>
+                <p id="seuIMC"></p>
+            </div>
+        </div>
+    </main>
+
+
+<script>
+
+    let peso = document.getElementById('peso').value
+    let altura = document.getElementById('tamanho').value
+    
+    function calcular() {
+        let peso = document.getElementById('peso').value
+        let tamanho = document.getElementById('tamanho').value
+
+        let seuResultado = (peso/((tamanho*tamanho)/10000)).toFixed(2);
+        document.getElementById('seuResultado').innerHTML = ('O valor calculado é: ' + seuResultado)
+
+        if(seuResultado < 18.5) {
+            document.getElementById('seuResultado').innerHTML = ('O valor calculado é: ' + seuResultado + ' Você está Abaixo do peso') 
+        } 
+        else if (seuResultado >= 18.5 && seuResultado<= 24.9) { 
+            document.getElementById('seuResultado').innerHTML = ('O valor calculado é: ' + seuResultado + ' Você está com peso Normal') 
+        }
+        else if (seuResultado >= 25 && seuResultado<= 29.9) { 
+            document.getElementById('seuResultado').innerHTML = ('O valor calculado é: ' + seuResultado + ' Você está acima do peso') 
+        }
+        else if (seuResultado >= 30 && seuResultado<= 34.9) { 
+            document.getElementById('seuResultado').innerHTML = ('O valor calculado é: ' + seuResultado + ' Você está com Obesidade I') 
+        }
+        else if (seuResultado >= 35 && seuResultado<= 39.9) { 
+            document.getElementById('seuResultado').innerHTML = ('O valor calculado é: ' + seuResultado + ' Você está com Obesidade II') 
+        }
+        else if (seuResultado >= 40) { 
+            document.getElementById('seuResultado').innerHTML = ('O valor calculado é: ' + seuResultado + ' Você precisa fazer uma Cirugia Bariátrica') 
+        }
+
+
+    }
+
+</script>
+
+    
+</body>
+</html>

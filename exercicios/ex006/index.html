@@ -20,36 +20,27 @@
 </head>
 <body>
 
-    <div id="area">
-        Intereja....
-    </div>
+    <h2 class="tituloDoSite">Hashirama</h2>
+    <button class="troca-titulo" value="">Trocar Titulo</button>
 
     
     <script>
 
-        let area = window.document.getElementById('area')
-        area.addEventListener('click', clicar)
-        area.addEventListener('mouseenter', entrar)
-        area.addEventListener('mouseout', sair)
+    var listaDeHokages = ['Hashirama','Tobirama','Hiruzen','Minato','Tsunade','Kakashi','Naruto'];
+    var titulo = document.querySelector(".tituloDoSite");
+    var botao = document.querySelector(".troca-titulo");
+    var Index = 0;
 
-        
-        
-        
-        function clicar () {
-            
-            area.innerText = 'Clicou!'
-            area.style.background = 'red'
-        }
+    botao.addEventListener("click", function(){
 
-        function entrar () {
-            area.innerText = 'Entrou!'
+    if(index +1 == listaDeHokages.length){
+        index = 0;
+    }else{
+        index = index + 1;
+    }
+                titulo.textContent = listaDeHokages[index]
 
-        }
-        function sair () {
-            area.innerText = 'Saiu!'
-            area.style.background = 'green'
-
-        }
+})
     </script>
 </body>
 </html>

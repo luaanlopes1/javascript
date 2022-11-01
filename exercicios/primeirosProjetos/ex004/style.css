@@ -11,9 +11,9 @@
 
 header > h1 {
     color: rgb(7, 109, 150);
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 15px;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -29,7 +29,7 @@ header > p {
 
 #left { 
     background-color: rgb(226, 229, 229);
-    height: 250px;
+    height: 350px;
     width: 50%;
     
     
@@ -37,35 +37,36 @@ header > p {
 
 #left > h1 { 
     text-align: center;
-    padding-top: 40px;
+    padding-top: 15px;
     
     color: rgb(7, 109, 150);
 }
 
 #left > p {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 #right { 
     background-color: rgb(7, 109, 150);
-    height: 250px;
+    height: 350px;
     width: 50%;
 }
 
 #right > h1 {
     color: white;
-    font-size: 15px;
-    padding-top: 40px;
+    font-size: 20px;
+    padding-top: 15px;
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 #right > input {
 
     height: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     margin-left: 20px;
+    border-radius: 5px;
 }
 
 #right > button {

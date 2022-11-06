@@ -10,7 +10,7 @@
 
     <h1>Olá, seja bem vindo.</h1>
 
-    <p>Digite seu nome: <input id="nomeCompleto" type="text" placeholder="Digite aqui..." > <button onclick="nome()">Enviar</button> <br>
+    <p>Digite seu nome: <input id="nomeCompleto" type="text" placeholder="Digite aqui..." > <button type="submit" onclick="nome()">Enviar</button> <br>
     
 
     <button onclick="diminuir()" id="menos">-</button>
@@ -22,17 +22,17 @@
 
     <script>
 
+            
             let nomeCompleto = document.getElementById('nomeCompleto').value
             let nomes = nomeCompleto.split(' ')
+            let aqui = document.getElementById('aqui')
 
     
 
             function nome() {
-
             let nomeCompleto = document.getElementById('nomeCompleto').value
             let nomes = nomeCompleto.split(' ')
-            
-            document.getElementById('aqui').innerHTML = (`Olá ${nomes[0]}`)
+            aqui.innerHTML = (`Olá Sr. ${nomes[0]}`)
              
         }
 
@@ -41,8 +41,11 @@
             
             let nomeCompleto = document.getElementById('nomeCompleto').value
             let nomes = nomeCompleto.split(' ')
+
+             
             
-            document.getElementById('aqui').innerHTML = (`Olá ${nomes[0]} ${nomes[1]}`)
+            aqui.innerHTML = (`Olá Sr. ${nomes[0]} ${nomes[1]}`)
+            
 
 
             }
@@ -52,7 +55,7 @@
             let nomeCompleto = document.getElementById('nomeCompleto').value
             let nomes = nomeCompleto.split(' ')
             
-            document.getElementById('aqui').innerHTML = (`Olá ${nomes[2]}`)
+            aqui.innerHTML = (`Olá ${nomes[2]}`)
 
             }
         

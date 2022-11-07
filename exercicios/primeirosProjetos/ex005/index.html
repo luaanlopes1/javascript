@@ -31,14 +31,17 @@
             text-align: center;
             padding-top: 10px;
             margin: 0px;
+            height: 90px;
+            width: 100px;
         }
     </style>
 </head>
 <body>
 
-    <div onclick="valor()" id="quadrado"> 
+    <div> 
         
-        <p> </p> 
+        <p onclick="valor()" id="quadrado"></p> 
+       
     
     </div>
 
@@ -49,11 +52,12 @@
         function valor () {
         
         let valor = document.getElementById('quadrado').innerHTML
+        
 
         
         
 
-        if (valor=='0') { document.getElementById('quadrado').innerHTML = 'X'
+        if (valor== '0' ) { document.getElementById('quadrado').innerHTML = 'X' 
         }
         else { 
             document.getElementById('quadrado').innerHTML = '0'

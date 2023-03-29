@@ -1,0 +1,65 @@
+@charset "UTF-8"; 
+
+* {
+   margin: 0;  
+   padding: 0;
+   
+
+}
+
+
+
+section { 
+    
+    display: flex;
+    
+    
+}
+
+#left { 
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    
+    
+}
+img { 
+    
+    max-width: 1000px;
+    max-height: 600px;
+}
+
+#right { 
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    
+    border: black 50px;
+    text-align: center;
+    
+   
+ 
+    
+}
+
+#right > #principal > h2 { 
+    padding: 20px;
+    
+}
+
+#right > #principal > input { 
+    margin: 0 auto;
+    
+   background-color: blue;
+   padding: 4px 0px 5px 6px;
+   margin: 1px;
+    
+}
+
+#right > #principal > #login { 
+
+margin-top: 15px;
+
+}
+
+

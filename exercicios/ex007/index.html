@@ -14,7 +14,7 @@
     <input type="button" value="Somar" onclick="somar()">
 
     <div id="resultado"> Resultado </div>
-    <input type="button" value="Limpar" onclick="limpar()">
+   
 
     <script>
         function somar() {
@@ -27,11 +27,7 @@
             resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${somar}.`
         }
 
-        function limpar() {
-            let limpar = window.document.getElementById('limpar')
-            limpar.addEventListener("onclick", somar.remove)
-            
-        }
+       
     </script>
     
 </body>

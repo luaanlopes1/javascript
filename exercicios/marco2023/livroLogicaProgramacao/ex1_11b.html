@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+<body>
+    <script>
+        // Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cliente.
+
+
+        // Firs step is : What the price of bill
+
+        var bill = Number(prompt('What the price of bill?'))
+
+        // Second step : What the people have in the table?
+
+        var table = Number(prompt('How many people have in the table? '))
+
+        var total = bill / table // The price of each person
+
+        alert(`The price to be paid per person is ${total.toFixed(2)} and the full bill is ${bill.toFixed(2)} `)
+    </script>
+    
+</body>
+</html>

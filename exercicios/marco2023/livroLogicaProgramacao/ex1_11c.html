@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+<body>
+
+    <script>
+        //Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+
+        // First step: what the price of product?
+
+        var product = Number(prompt('What the price of Product?'))
+
+        // Second step: calculated off payments
+
+        var cash = product * 0.1
+        var offpayment = product - cash
+        var card = product / 3
+
+        alert(` The price of product is ${product.toFixed(2)} 
+        \nAnd if the payment for in cash is ${offpayment.toFixed(2)}
+        \nOr you can pay in 3x of ${card.toFixed(2)}  `)
+
+    </script>
+    
+</body>
+</html>

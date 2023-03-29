@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The dinner</title>
+</head>
+<body>
+
+    
+    <script>
+        // Elaborar um programa que leia o valor de um jantar. Calcule e informe o valor da taxa do garçom (10%) e o valor total a ser pago.
+        
+        //First step > We need to know the price of dinner
+        
+        var dinner = Number(prompt('What the price of dinner?'))
+
+        // Second Step > tax 10%
+
+        var tax = dinner * 0.1 // The tax dinner 10%
+        var total = dinner + tax
+        alert(
+            'The value of dinner is: ' + dinner.toFixed(2) + 
+            '\nAnd the tax is :' + tax.toFixed(2) +
+            '\nAnd the total of dinner with tax is: ' + total.toFixed(2)
+            
+        )
+
+    </script>
+    
+</body>
+</html>

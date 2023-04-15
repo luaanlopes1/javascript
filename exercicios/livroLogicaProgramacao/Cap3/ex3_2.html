@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+</head>
+<body>
+
+    <!-- nosso programa vai calcular o peso ideal de uma pessoa.Para isso, foram pesquisados alguns sites sobre o assunto. Em um deles, há a indicação de que o peso ideal de um adulto pode ser calculado a partir das fórmulas: 22 * altura2 (para homens); e 21* altura2 (para mulheres). -->
+
+    <!-- Para criar o campo de formulário sexo, foram utilizadas as tags <input type="radio" ...>. A propriedade name serve para indicar que os campos de seleção pertencem a um mesmo grupo e, dessa forma, marcar um item implica desmarcar automaticamente o outro. -->
+
+
+
+    <h1>Programa Cálculo do Peso Ideal</h1>
+    <p>Nome: <input type="text" id="name"></p>
+    <p>Sexo: <input type="radio" name="sexo" id="masculino"> Masculino <input type="radio" name="sexo" id="feminino" > Feminino </p>
+    <p>Altura: <input type="number" id="altura"> </p>
+
+    <input type="button" value="Calcular Peso Ideal" id="calcularPeso">
+    <input type="button" value="Limpar Campos" id="limparCampos">
+
+    <h3 id="text" ></h3>
+
+
+    <script src="ex3_2.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

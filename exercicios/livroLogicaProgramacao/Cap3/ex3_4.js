@@ -8,15 +8,38 @@ function calcular () {
     // var data = new Date();
     var hourFrance = document.getElementById('hourFrance')
 
-    var somar = (Number(hora) + 5)
+    var resultadoFranca = (Number(hora) + 5).toFixed(2)
 
-
-    if (somar > 24)
-
-    hourFrance.innerHTML = `Agora são ${somar} na frança`
+    
+    
 
 
 
+    // Primeira condição não existir hora maior do que 24 horas
+
+    if (hora >24.01) {
+
+        alert (`Não existe este horário. Por favor coloque um número menor que 24 horas`)
+
+        document.getElementById('hora').focus()
+
+        hourFrance.innerHTML = ``
+
+        return
+    }
+
+    
+    // Se for maior do que 24 hrs voltar a contar de 00:00 horas
+
+    if (resultadoFranca > 23.59) {
+
+        hourFrance.innerHTML = `Agora são ${(resultadoFranca - 24).toFixed(2)} horas na frança`
+        
+
+    } else { 
+
+        hourFrance.innerHTML = `Agora são ${resultadoFranca} horas na frança`
+    }
 
 
 

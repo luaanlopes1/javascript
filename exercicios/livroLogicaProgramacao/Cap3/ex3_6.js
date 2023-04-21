@@ -18,6 +18,7 @@ function exibir () {
     var cedulaCem = 100
     var cedulaCinquenta = 50
     var cedulaDez = 10
+    
 
     // Validar sem o valor do saque é menos do que as cedulas
     
@@ -30,20 +31,40 @@ function exibir () {
 
     // Validar se o saque é menor do que a cedula minima.
 
-    else if (saque < 10) { 
-        alert (`Por favor, faça um saque maior do que R$10,00.`)
+    if (saque % 10 != 0 ) { 
+        alert (`Valor inválido para notas disponíveis. Por favor verificar notas disponiveis.`)
         return
     }
 
-    // 
+    // Calcular notas de 100, 50 e 10
 
-    else if (saque >= 10 && saque < 50 ) { 
-        dez.innerHTML = (`Notas de R$10,00 = ${saque / cedulaDez} `)
+    var notasCem = Math.floor(saque / 100)
+    var resto = saque % 100
+    var notasCinquenta = Math.floor(resto / 50)
+    resto = resto % 50
+    var notasDez = Math.floor (resto / 10)
+
+
+
+    // Exibe as notas se houver
+
+    if ( notasCem > 0) {
+        cem.innerHTML = (`Notas de R$100,00 = ${notasCem} `)
+
+    
     }
 
-    else if (saque >=50) {
-        cinquenta.innerHTML = (`Notas de R$50,00 = ${saque / cedulaCinquenta}`)
+    if (notasCinquenta > 0) {
+        cinquenta.innerHTML = (`Notas de R$50,00 = ${notasCinquenta}`)
     }
+
+    if (notasDez > 0) { 
+        dez.innerHTML = (`Notas de R$10,00 = ${notasDez} `)
+    }
+
+   
+
+    
     
     
 }

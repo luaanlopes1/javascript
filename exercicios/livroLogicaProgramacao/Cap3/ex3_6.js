@@ -3,22 +3,20 @@
 
 
 
-
-
-
-
-
 function exibir () { 
 
     var saque = document.getElementById('saque').value
     var cem = document.getElementById('cem')
     var cinquenta = document.getElementById('cinquenta')
     var dez = document.getElementById('dez')
+    var cinco = document.getElementById('cinco')
 
-    var cedulaCem = 100
-    var cedulaCinquenta = 50
-    var cedulaDez = 10
-    
+    cem.innerHTML = ('')
+    cinquenta.innerHTML = ('')
+    dez.innerHTML = ('')
+    cinco.innerHTML = ('')
+
+
 
     // Validar sem o valor do saque é menos do que as cedulas
     
@@ -31,22 +29,25 @@ function exibir () {
 
     // Validar se o saque é menor do que a cedula minima.
 
-    if (saque % 10 != 0 ) { 
+    if (saque % 5 != 0 ) { 
         alert (`Valor inválido para notas disponíveis. Por favor verificar notas disponiveis.`)
         return
     }
 
-    // Calcular notas de 100, 50 e 10
+    // Calcular notas de 100, 50 , 10 e 5
 
     var notasCem = Math.floor(saque / 100)
     var resto = saque % 100
     var notasCinquenta = Math.floor(resto / 50)
     resto = resto % 50
     var notasDez = Math.floor (resto / 10)
+    resto = resto % 10
+    var notasCinco = Math.floor (resto / 5)
 
 
 
-    // Exibe as notas se houver
+
+    // Exibe a quantidade de notas 
 
     if ( notasCem > 0) {
         cem.innerHTML = (`Notas de R$100,00 = ${notasCem} `)
@@ -62,13 +63,25 @@ function exibir () {
         dez.innerHTML = (`Notas de R$10,00 = ${notasDez} `)
     }
 
-   
+    if ( notasCinco > 0) { 
 
-    
-    
+        cinco.innerHTML = (`Notas de R$5,00 = ${notasCinco} `)
+    }
+
     
 }
 var btNotas = document.getElementById('btNotas')
 btNotas.addEventListener('click', exibir)
+
+
+    // Criar função ao finalizar o saque.
+
+
+
+
+
+    
+
+
 
 

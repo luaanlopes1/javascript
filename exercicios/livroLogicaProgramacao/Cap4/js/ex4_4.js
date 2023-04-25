@@ -18,7 +18,7 @@ function calcular () {
     for (var i = number; i > 0; i--) { 
         // resposta vai acumulando números e virgulas
 
-        resposta = resposta + i + ", ";
+        resposta = (resposta + i) + ", ";
     }
 
         // Em JavaScript, a variável i declarada no for é uma variável local que existe na função. Após o término do laço, ela mantém o valor do último incremento/decremento da repetição. Portanto, ao referenciar o i fora do laço, o conteúdo “1” + “.” é acrescentado à resposta.

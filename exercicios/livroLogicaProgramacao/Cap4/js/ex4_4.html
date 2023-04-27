@@ -4,24 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decrescente</title>
+    <title>Break e Continue</title>
 </head>
 <body>
 
-    <!-- O nosso segundo exemplo ilustra a montagem de uma estrutura de repetição decrescente, com o valor inicial informado pelo usuário. O código HTML é semelhante ao Exemplo 4.1, contudo, nesse exemplo vamos exibir os números em uma única linha. Portanto, podemos utilizar novamente a tag h3 para destacar a lista de números. -->
+   <script>
+
+    alert('Digite 0 para sair')
+
+    // Inicio da repetição
+
+    do { 
+        var num = Number(prompt('Número: '))
+
+        if ( num == 0 || isNaN(num)) { 
+
+            var sair = confirm('Confirma saída?')  // Solicita confirmação do usuario
+
+            if (sair) { 
+                break // sai da repetição
+            } else { 
+                continue // Volta ao inicio do laço
+            }
+        }
+
+        // se par, mostra o dobro; impar , mostra o triplo
+
+        if (num % 2 == 0) { 
+            alert (`O dobro de ${num} é: ${num * 2}`)
+        } else { 
+            alert(`O triplo de ${num} é: ${num * 3}`)
+        }
+    } while (true) // Enquanto verdade ( só sai do laço, pelo break)
+
+    alert('Bye, bye...')
 
 
 
-    <h1>Programa Números Decrescentes</h1>
 
-    <p>Número: <input type="number" id="inNumber"></p>
 
-    <input type="button" value="Decrescer Até 1" id="btMostrar">
 
-    <h3 id="outResposta"></h3>
 
-    <script src="ex4_2.js"></script>
 
+
+   </script>
     
 </body>
 </html>

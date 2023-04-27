@@ -4,23 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decrescente</title>
+    <title>Decrescente 2</title>
 </head>
 <body>
 
-    <!-- O nosso segundo exemplo ilustra a montagem de uma estrutura de repetição decrescente, com o valor inicial informado pelo usuário. O código HTML é semelhante ao Exemplo 4.1, contudo, nesse exemplo vamos exibir os números em uma única linha. Portanto, podemos utilizar novamente a tag h3 para destacar a lista de números. -->
+    <script>
+
+        // solicita o número e repete a leitura enquanto inválido.
+
+        do { 
+
+            var num = Number(prompt('Número: '))
+            if ( num == '') {
+                alert('Digite um número válido...')
+            }
+
+        } while (num == 0)
+        
+        // declara e inicializa variável que irá exibir pares
+
+        var pares = `Pares entre 1 e ${num} : `
+
+        //  Isola o primeiro par ( para evitar ultima virgula)
+
+        if (num > 1) { 
+            pares = pares + '2'
+
+        }
+
+        // laço para acumular pares ( inicia em 4 pois o 2 já foi atribuido)
+
+        for ( var i = 4; i <= num; i = i + 2) { 
+            pares = pares + ', ' + i
+        }
+
+        // Exibe a lista dos números pares
+
+        alert (pares)
 
 
 
-    <h1>Programa Números Decrescentes</h1>
 
-    <p>Número: <input type="number" id="inNumber"></p>
+    </script>
 
-    <input type="button" value="Decrescer Até 1" id="btMostrar">
-
-    <h3 id="outResposta"></h3>
-
-    <script src="ex4_2.js"></script>
+    
 
     
 </body>

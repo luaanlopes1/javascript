@@ -43,10 +43,10 @@ btAdicionar.addEventListener('click', adicionarPaciente)
 
 
 
-// URGENCIA \/ ATENDENR PACIENTE
+// URGENCIA \/ 
 
 
-function atenderPaciente() { 
+function urgenciaPacientes() { 
 
     // Cria referencia aos elementos de entrada e saída de dados da página.
 
@@ -93,11 +93,11 @@ function atenderPaciente() {
 }
 
 var btUrgencia = document.getElementById('btUrgencia')
-btUrgencia.addEventListener('click', atenderPaciente)
+btUrgencia.addEventListener('click', urgenciaPacientes)
 
 
 
-function urgenciaPacientes () { 
+function atenderPacientes () { 
 
 
     var inPaciente = document.getElementById('inPaciente').value
@@ -132,4 +132,4 @@ function urgenciaPacientes () {
 }
 
 var btAtender = document.getElementById('btAtender')
-btAtender.addEventListener('click', urgenciaPacientes)
+btAtender.addEventListener('click', atenderPacientes)

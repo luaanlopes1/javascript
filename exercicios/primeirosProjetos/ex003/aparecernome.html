@@ -22,6 +22,9 @@
 
     <script>
 
+
+           
+
             
             let nomeCompleto = document.getElementById('nomeCompleto').value
             let nomes = nomeCompleto.split(' ')
@@ -42,9 +45,18 @@
             let nomeCompleto = document.getElementById('nomeCompleto').value
             let nomes = nomeCompleto.split(' ')
 
+            resultado = ''
+
+            for (var i = 0; i < nomes; i++) {
+                
+            resultado += `Olá Sr. ${nomes[i]}`
+
+            console.log(nomes[i])
+            
+            }
              
             
-            aqui.innerHTML = (`Olá Sr. ${nomes[0]} ${nomes[1]}`)
+            aqui.innerHTML += resultado
             
 
 

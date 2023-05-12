@@ -1,7 +1,5 @@
 
 
-
-
 function resultado () { 
 
     var inChinchilas = document.getElementById('inChinchilas').value
@@ -9,7 +7,6 @@ function resultado () {
     var chinchilas = Number(inChinchilas)
     var anos = Number(inAnos)
     var outResposta = document.getElementById('outResposta')
-    
 
     var total = chinchilas
     var resultado = ''
@@ -27,16 +24,9 @@ function resultado () {
         total = total * 3
 
 
-
-
     }
 
     outResposta.innerHTML = resultado
-
-
-
-
-
 
 
 

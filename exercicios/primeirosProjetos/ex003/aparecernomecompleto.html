@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Exercicio</title>
+</head>
+<body>
+
+    <h1>Olá, seja bem vindo.</h1>
+
+    <p>Digite seu nome: 
+        <input type="text" id="inName"> 
+        <input type="button" value="Enviar" id="btEnviar">
+            
+    </p>
+    
+    <input type="button" value="-" id="btDiminuir">
+    <p id="outName"></p>
+    <input type="button" value="+" id="btSomar">
+
+    <script>
+
+        const names = []
+
+        
+
+        function enviar () {
+            
+            
+            var inName = document.getElementById('inName').value
+            var outName = document.getElementById('outName')
+
+            names.push(inName)
+
+            
+
+            
+           
+            var resposta = ''
+
+            for (var i = 0; i < names.length; i++) {
+
+            resposta +=  names[0]
+          
+            }
+
+            console.log(names.length)
+            
+
+            outName.innerHTML = resposta
+
+        }
+
+        var btEnviar = document.getElementById('btEnviar')
+        btEnviar.addEventListener('click', enviar)
+
+        // BOTÃO SOMAR ABAIXO
+
+        function somar () { 
+
+            var inName = document.getElementById('inName').value
+            var outName = document.getElementById('outName')
+
+            var nomes = inName.split(' ')
+
+            var resposta = ''
+
+            for (var i = 0; i < nomes.length; i++) {
+
+            
+
+            }
+
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
